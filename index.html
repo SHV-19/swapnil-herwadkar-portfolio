@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Swapnil Herwadkar — Data, BI and AI portfolio">
+<title>Swapnil Herwadkar | Data + AI Portfolio</title>
+<style>
+:root{--bg:#07080b;--panel:#11141a;--panel2:#151922;--line:#2a303b;--text:#f6f7fb;--muted:#9da6b5;--red:#ff3434;--red2:#ff6969;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:
+radial-gradient(circle at 15% 8%,rgba(255,52,52,.1),transparent 28rem),
+#07080b;color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.1;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:36px 36px}
+a{color:inherit}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,8,11,.85);backdrop-filter:blur(18px);border-bottom:1px solid #171a20}
+nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800}
+.mark{width:12px;height:12px;background:var(--red);transform:rotate(45deg);box-shadow:0 0 18px rgba(255,52,52,.7)}.links{display:flex;gap:22px;align-items:center}.links a{text-decoration:none;color:var(--muted);font-size:.9rem}.links a:hover{color:#fff}
+.cta{border:1px solid rgba(255,52,52,.55);padding:8px 14px;border-radius:999px;background:rgba(255,52,52,.08)}
+.hero{padding:92px 0 48px}.heroGrid{display:grid;grid-template-columns:1.45fr .55fr;gap:58px;align-items:center}
+.eyebrow{font:12px/1.4 Consolas,monospace;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);display:flex;gap:10px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 18px rgba(255,52,52,.8)}
+h1{font-size:clamp(3.2rem,8vw,6.8rem);line-height:.92;letter-spacing:-.065em;margin:22px 0 0}.tagline{margin-top:28px;color:var(--red2);font-size:clamp(1.1rem,2.5vw,1.65rem);font-weight:800;letter-spacing:-.02em}
+.lead{max-width:760px;color:#c8cdd7;margin:18px 0 0}.meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:var(--muted);font:14px Consolas,monospace}.meta a{text-decoration:none;border-bottom:1px dashed #505764}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:12px;border:1px solid #343b49;text-decoration:none;font-weight:800;background:#10131a}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,#ff3434,#b70918);border-color:#ff5050}
+.portraitBox{width:min(100%,300px);aspect-ratio:1/1.1;border:1px solid var(--line);border-radius:26px;padding:12px;background:linear-gradient(145deg,rgba(255,52,52,.09),rgba(255,255,255,.02));overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(0,0,0,.38)}.portrait{width:100%;height:100%;object-fit:cover;border-radius:18px;background:#151820}.portraitBox:after{content:"ANALYTICS • BI • AI";position:absolute;left:24px;bottom:20px;font:11px Consolas,monospace;letter-spacing:.12em;color:#fff;background:rgba(7,8,11,.68);padding:7px 9px;border-radius:8px}
+.metrics{margin-top:28px;display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(17,20,26,.85)}
+.metric{padding:22px 18px;border-right:1px solid var(--line);min-height:132px}.metric:last-child{border-right:0}.metric strong{display:block;color:var(--red2);font:700 29px Consolas,monospace;margin-bottom:9px}.metric span{color:var(--muted);font-size:13px}
+section{padding:72px 0;scroll-margin-top:90px}.head{display:grid;grid-template-columns:120px 1fr;gap:16px;margin-bottom:30px}.no{color:#6f7785;font:12px Consolas,monospace;padding-top:8px}.head h2{margin:0;font-size:clamp(1.7rem,3vw,2.35rem);letter-spacing:-.04em}.head p{margin:8px 0 0;color:var(--muted);max-width:760px}
+.timeline{display:grid;grid-template-columns:24px 1fr;gap:20px}.rail{width:2px;background:linear-gradient(var(--red),rgba(255,52,52,.05));margin:8px auto;position:relative}.rail:before,.rail:after{content:"";position:absolute;left:50%;width:9px;height:9px;border-radius:50%;background:var(--red);transform:translateX(-50%)}.rail:before{top:0}.rail:after{bottom:0}.stack{display:grid;gap:14px}
+details{border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}details[open]{border-color:rgba(255,52,52,.5)}summary{cursor:pointer;list-style:none;padding:22px 24px}summary::-webkit-details-marker{display:none}.date{font:12px Consolas,monospace;color:#7b8391;text-transform:uppercase;letter-spacing:.08em}.role{font-weight:800;font-size:1.08rem;margin-top:7px}.org{color:var(--muted);font-style:italic;margin-top:4px}.detailBody{border-top:1px solid var(--line);padding:18px 24px 22px;color:#c9ced7}.detailBody ul{margin:0;padding-left:18px}.detailBody li+li{margin-top:8px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:22px}.card h3{margin:0 0 16px;color:var(--red2);font:700 13px Consolas,monospace;text-transform:uppercase;letter-spacing:.05em}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #303642;background:#171b24;color:#b7c0cf;border-radius:999px;padding:7px 10px;font-size:12px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:285px;display:flex;flex-direction:column;position:relative;overflow:hidden}.kicker{font:12px Consolas,monospace;color:var(--red2);letter-spacing:.1em;text-transform:uppercase}.project h3{color:#fff;font:800 20px/1.3 Inter,system-ui;margin:10px 0 8px}.project p{color:var(--muted);font-size:14px}.tech{margin-top:auto;padding-top:20px;color:#d2d6df;font:12px Consolas,monospace}.project a{margin-top:14px;text-decoration:none;font-weight:800}.project a:hover{color:var(--red2)}
+.edu{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.edu .card h3{color:#fff;font:800 17px Inter,system-ui;margin:8px 0}.small{font:11px Consolas,monospace;color:#727b89;text-transform:uppercase;letter-spacing:.08em}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.contact .card h3{color:#fff;font:800 22px Inter,system-ui}.contact .card p{color:var(--muted)}.contactList{display:grid;gap:10px}.contactLink{display:flex;justify-content:space-between;padding:13px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;background:#0d1016}.contactLink:hover{border-color:rgba(255,52,52,.55)}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#727b89;font:12px Consolas,monospace}
+@media(max-width:960px){.heroGrid,.edu,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}.portraitBox{width:250px}}
+@media(max-width:720px){.wrap{width:min(calc(100% - 24px),var(--max))}.links{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.head{grid-template-columns:1fr;gap:4px}.grid4{grid-template-columns:1fr}.hero{padding-top:58px}.heroGrid{gap:36px}.meta{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav>
+    <a class="brand" href="#top"><span class="mark"></span><span>SHV / DATA + AI</span></a>
+    <div class="links">
+      <a href="#career">Career</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="cta" href="#contact">Get in touch</a>
+    </div>
+  </nav></div>
+</header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div class="heroGrid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Open to Data, BI & Analytics Opportunities</div>
+      <h1>Swapnil<br>Herwadkar</h1>
+      <div class="tagline">Business Analytics / BI / AI-Powered Decision Systems</div>
+      <p class="lead">I build practical analytics systems that turn operational data into decisions — from SQL-backed reporting and executive dashboards to workflow automation, predictive analytics, and AI-powered career intelligence.</p>
+      <div class="meta">
+        <span>Glendale, AZ, USA</span>
+        <a href="mailto:swapnilherwadkar98@gmail.com">swapnilherwadkar98@gmail.com</a>
+        <a href="https://www.linkedin.com/in/shv98" target="_blank" rel="noreferrer">linkedin.com/in/shv98</a>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View Featured Work ↓</a>
+        <a class="btn" href="https://github.com/SHV-19" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noreferrer">Tableau ↗</a>
+      </div>
+    </div>
+    <div><div class="portraitBox"><img class="portrait" src="https://github.com/SHV-19.png" alt="Swapnil Herwadkar"></div></div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><strong>3+ yrs</strong><span>Analytics & business intelligence experience</span></div>
+    <div class="metric"><strong>60+ hrs</strong><span>Monthly reporting effort saved through automation</span></div>
+    <div class="metric"><strong>30%</strong><span>Faster recurring report turnaround</span></div>
+    <div class="metric"><strong>25%</strong><span>Reduction in manual data processing effort</span></div>
+    <div class="metric"><strong>15%</strong><span>SQL query execution-time improvement</span></div>
+    <div class="metric"><strong>35%</strong><span>Workflow-efficiency improvement in reporting layers</span></div>
+  </div>
+</div></section>
+
+<section id="career"><div class="wrap">
+  <div class="head"><div class="no">01 / CAREER</div><div><h2>Career Circuit</h2><p>Operational analytics, enterprise reporting, business intelligence, and AI-assisted decision systems.</p></div></div>
+  <div class="timeline"><div class="rail"></div><div class="stack">
+    <details open><summary><div class="date">Oct 2024 — Oct 2025 · Data Analyst · Contract</div><div class="role">Operational Analytics, KPI Design & Reporting Automation</div><div class="org">Community Dreams Foundation</div></summary><div class="detailBody"><ul><li>Translated homeowner intake, contractor matching, incentives, and project workflows into KPI definitions and dashboard requirements.</li><li>Automated SQL-driven reporting and sustainability KPI workflows, reducing manual processing effort by 25%.</li><li>Optimized MySQL reporting datasets and reusable BI logic for self-service analytics.</li></ul></div></details>
+    <details><summary><div class="date">Nov 2022 — Jun 2023 · Data Analyst II</div><div class="role">Enterprise BI, KPI Reporting & ETL Automation</div><div class="org">Accenture</div></summary><div class="detailBody"><ul><li>Built SQL and Power BI KPI dashboards for recurring operational reporting.</li><li>Automated ETL/reporting pipelines with scheduling, retries, alerts, and QA checks, saving 60+ hours per month.</li><li>Standardized KPI definitions, mappings, validation rules, and reporting documentation.</li></ul></div></details>
+    <details><summary><div class="date">Feb 2021 — Nov 2022 · Data Analyst I</div><div class="role">SQL Performance, ERP Data & Reporting Reliability</div><div class="org">Accenture</div></summary><div class="detailBody"><ul><li>Optimized high-volume SQL using indexing, partitioning, CTE refactors, and window functions, reducing execution time by 15%.</li><li>Integrated SAP HANA/BW, ERP, and source-system data into reporting layers, improving workflow efficiency by 35%.</li><li>Reconciled ERP, SQL, and reporting-layer data to improve accuracy and reduce discrepancies.</li></ul></div></details>
+  </div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="head"><div class="no">02 / SKILLS</div><div><h2>Core Skills</h2><p>Business-facing analytics with engineering depth for automation, validation, and scalable reporting.</p></div></div>
+  <div class="grid4">
+    <article class="card"><h3>Analytics & BI</h3><div class="chips"><span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Looker</span><span class="chip">Excel</span><span class="chip">KPI Reporting</span></div></article>
+    <article class="card"><h3>Data Platforms</h3><div class="chips"><span class="chip">Snowflake</span><span class="chip">MySQL</span><span class="chip">BigQuery</span><span class="chip">Redshift</span><span class="chip">SAP HANA</span><span class="chip">SAP BW</span></div></article>
+    <article class="card"><h3>Automation & AI</h3><div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">REST APIs</span><span class="chip">OpenAI API</span><span class="chip">ETL</span></div></article>
+    <article class="card"><h3>Business Analysis</h3><div class="chips"><span class="chip">Requirements</span><span class="chip">Data Validation</span><span class="chip">Root Cause Analysis</span><span class="chip">UAT</span><span class="chip">Agile</span><span class="chip">JIRA</span></div></article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="head"><div class="no">03 / PROJECTS</div><div><h2>Featured Builds</h2><p>Selected work across AI workflow systems, enterprise analytics, and predictive modeling.</p></div></div>
+  <div class="projects">
+    <article class="card project"><div class="kicker">AI Product / Chrome Extension</div><h3>SwapOpt AI — Job Intelligence Platform</h3><p>AI-powered career operating system for job analysis, resume strategy, application assistance, tracking, recruiter workflows, interview preparation, and personal market intelligence.</p><div class="tech">JavaScript · Node.js · Express · OpenAI · Browser Automation</div><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">Analytics Platform</div><h3>FIFA World Cup 2026 Sponsorship Analytics</h3><p>End-to-end platform combining Python ETL, Snowflake, SQL, Power BI, Streamlit, and AI-assisted querying for governed KPI reporting.</p><div class="tech">Python · Snowflake · Power BI · Streamlit · OpenAI</div><a href="https://github.com/SHV-19/FIFA-2026-AI-Sponsorship-Analytics-Platform" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">Machine Learning</div><h3>Ad Click Prediction</h3><p>Predictive targeting pipeline for high-probability ad-click users using feature engineering, class balancing, and gradient-boosted modeling.</p><div class="tech">Python · Scikit-learn · XGBoost · SMOTE · Pandas</div><a href="https://github.com/SHV-19/AD_Click_Churn" target="_blank" rel="noreferrer">View repository ↗</a></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="head"><div class="no">04 / EDUCATION</div><div><h2>Education</h2><p>Business analytics training built on an engineering foundation.</p></div></div>
+  <div class="edu">
+    <article class="card"><div class="small">Sep 2023 — Aug 2024</div><h3>Master of Science in Business Analytics</h3><div>University of Massachusetts Amherst</div></article>
+    <article class="card"><div class="small">Jul 2016 — Aug 2020</div><h3>Bachelor of Engineering in Electronics</h3><div>Ramdeobaba College of Engineering & Management</div></article>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="head"><div class="no">05 / CONTACT</div><div><h2>Let’s Build Something Useful</h2><p>Open to conversations around analytics, business intelligence, data products, and AI-assisted decision systems.</p></div></div>
+  <div class="contact">
+    <article class="card"><h3>Business problems → measurable analytics.</h3><p>My strongest work sits where business context, reporting, data quality, automation, and decision support intersect.</p><div class="actions"><a class="btn primary" href="mailto:swapnilherwadkar98@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/shv98" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></article>
+    <article class="card"><div class="contactList">
+      <a class="contactLink" href="https://github.com/SHV-19" target="_blank" rel="noreferrer"><span>GitHub</span><span>↗</span></a>
+      <a class="contactLink" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noreferrer"><span>Tableau Public</span><span>↗</span></a>
+      <a class="contactLink" href="mailto:swapnilherwadkar98@gmail.com"><span>Email</span><span>→</span></a>
+    </div></article>
+  </div>
+  <footer><span>© <span id="y"></span> Swapnil Herwadkar</span><span>Built for fast scanning · Red / black interface</span></footer>
+</div></section>
+</main>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(o=>{if(o!==d)o.open=false})}));
+</script>
+</body>
+</html>
