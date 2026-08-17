@@ -1,16 +1,16 @@
-# Swapnil Herwadkar Portfolio
+# Swapnil Herwadkar — Portfolio
 
-Ready for GitHub Pages.
+Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on business intelligence, analytics automation, predictive modeling, and AI-powered decision systems.
 
-## Deploy
-1. Create a public GitHub repo, e.g. `swapnil-herwadkar-portfolio`.
-2. Upload `index.html` to the repository root.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from a branch**.
-5. Branch: `main`; folder: `/(root)`.
-6. Save.
+**Live site:** https://shv-19.github.io/swapnil-herwadkar-portfolio/
 
-Expected URL:
-`https://SHV-19.github.io/swapnil-herwadkar-portfolio/`
+## Featured work
 
-The site is self-contained; no build tools are required.
+- SwapOpt V4 — Career Decision & Outcome Intelligence
+- FIFA World Cup 2026 Sponsorship Analytics
+- ABS Inventory Forecasting & Optimization
+- ARV / HIV Treatment Distribution Analysis
+- Ad Click Prediction
+- Fashion Sustainability Index
+
+The site is intentionally lightweight: a self-contained `index.html` deployed through GitHub Pages with no framework or build dependency.
