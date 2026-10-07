@@ -1,12 +1,18 @@
 # Swapnil Herwadkar — Portfolio
 
-Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on business intelligence, analytics automation, predictive modeling, and AI-powered decision systems.
+Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on business intelligence, analytics automation, predictive modeling, and evidence-grounded AI decision systems.
 
 **Live site:** https://shv-19.github.io/swapnil-herwadkar-portfolio/
 
-## Featured work
+## Flagship
 
-- SwapOpt V4 — Career Decision & Outcome Intelligence
+- **SwapOpt — AI Career Operating System** — evidence-grounded job intelligence, truthful application workflows, explicit lifecycle tracking, Network DNA, longitudinal Candidate Identity, and product-proof/outcome learning.
+- Public showcase: https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine
+- Product case study: https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md
+- Technical blueprint: https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/TECHNICAL_BLUEPRINT.md
+
+## Additional featured work
+
 - FIFA World Cup 2026 Sponsorship Analytics
 - ABS Inventory Forecasting & Optimization
 - ARV / HIV Treatment Distribution Analysis
