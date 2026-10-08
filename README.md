@@ -1,6 +1,6 @@
 # Swapnil Herwadkar — Portfolio
 
-Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on business intelligence, analytics automation, predictive modeling, and evidence-grounded AI decision systems.
+Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on business intelligence, analytics automation, predictive modeling, evidence-grounded AI decision systems, and sports decision intelligence.
 
 **Live site:** https://shv-19.github.io/swapnil-herwadkar-portfolio/
 
@@ -13,7 +13,7 @@ Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on bus
 
 ## Additional featured work
 
-- **[FPL Decision Engine](https://github.com/SHV-19/FPL-Decision-Engine)** — a curated public source showcase of an FPL sports-decision platform combining canonical squad state, legal recommendation validation, live context, and human–AI research.
+- **[FPL Decision Engine](https://github.com/SHV-19/FPL-Decision-Engine)** — an explainable sports-decision system combining Official FPL player evidence, real squad economics, LiveFPL rank/EO context, deterministic legality checks, manager evidence, and a pre-model → AI → action → outcome research trail for studying decision quality and bias.
 - FIFA World Cup 2026 Sponsorship Analytics
 - ABS Inventory Forecasting & Optimization
 - ARV / HIV Treatment Distribution Analysis
