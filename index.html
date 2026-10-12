@@ -32,7 +32,10 @@ section{padding:72px 0;scroll-margin-top:90px}.head{display:grid;grid-template-c
 .timeline{display:grid;grid-template-columns:24px 1fr;gap:20px}.rail{width:2px;background:linear-gradient(var(--red),rgba(255,52,52,.05));margin:8px auto;position:relative}.rail:before,.rail:after{content:"";position:absolute;left:50%;width:9px;height:9px;border-radius:50%;background:var(--red);transform:translateX(-50%)}.rail:before{top:0}.rail:after{bottom:0}.stack{display:grid;gap:14px}
 details{border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}details[open]{border-color:rgba(255,52,52,.5)}summary{cursor:pointer;list-style:none;padding:22px 24px}summary::-webkit-details-marker{display:none}.date{font:12px Consolas,monospace;color:#7b8391;text-transform:uppercase;letter-spacing:.08em}.role{font-weight:800;font-size:1.08rem;margin-top:7px}.org{color:var(--muted);font-style:italic;margin-top:4px}.detailBody{border-top:1px solid var(--line);padding:18px 24px 22px;color:#c9ced7}.detailBody ul{margin:0;padding-left:18px}.detailBody li+li{margin-top:8px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:22px}.card h3{margin:0 0 16px;color:var(--red2);font:700 13px Consolas,monospace;text-transform:uppercase;letter-spacing:.05em}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #303642;background:#171b24;color:#b7c0cf;border-radius:999px;padding:7px 10px;font-size:12px}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:300px;display:flex;flex-direction:column;position:relative;overflow:hidden}.project.featured{border-color:rgba(255,52,52,.62);background:linear-gradient(145deg,rgba(255,52,52,.08),var(--panel) 45%);box-shadow:0 18px 55px rgba(0,0,0,.2)}.kicker{font:12px Consolas,monospace;color:var(--red2);letter-spacing:.1em;text-transform:uppercase}.project h3{color:#fff;font:800 20px/1.3 Inter,system-ui;margin:10px 0 8px;text-transform:none;letter-spacing:normal}.project p{color:var(--muted);font-size:14px}.tech{margin-top:auto;padding-top:20px;color:#d2d6df;font:12px Consolas,monospace}.project a{margin-top:14px;text-decoration:none;font-weight:800}.project a:hover{color:var(--red2)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:300px;display:flex;flex-direction:column;position:relative;overflow:hidden}.project.featured{border-color:rgba(255,52,52,.62);background:linear-gradient(145deg,rgba(255,52,52,.08),var(--panel) 45%);box-shadow:0 18px 55px rgba(0,0,0,.2)}.kicker{font:12px Consolas,monospace;color:var(--red2);letter-spacing:.1em;text-transform:uppercase}.project h3{color:#fff;font:800 20px/1.3 Inter,system-ui;margin:10px 0 8px;text-transform:none;letter-spacing:normal}.project p{color:var(--muted);font-size:14px}.tech{margin-top:auto;padding-top:20px;color:#d2d6df;font:12px Consolas,monospace}.project>a{display:inline-flex;align-self:flex-start;max-width:100%;margin-top:12px;text-decoration:none;font-size:13px;font-weight:750;line-height:1.55;overflow-wrap:anywhere}.project>a:hover{color:var(--red2)}
+a:focus-visible,summary:focus-visible{outline:2px solid #ff7a7a;outline-offset:4px}
+.btn,.contactLink,.project>a,.links a{transition:color .16s ease,background-color .16s ease,border-color .16s ease,transform .16s ease}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.contactLink,.project>a,.links a{transition:none}}
 .project.fpl-feature{border-color:rgba(83,185,228,.55);background:linear-gradient(145deg,rgba(40,129,177,.09),var(--panel) 55%)}
 .decision-flow{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:16px 0}
 .decision-flow span{border:1px solid rgba(83,185,228,.3);background:rgba(38,111,149,.13);padding:5px 9px;border-radius:8px;font:11px/1.5 Consolas,monospace;color:#c1eaff}
@@ -45,10 +48,17 @@ details{border:1px solid var(--line);border-radius:14px;background:var(--panel);
 .project .published-links a{display:inline-flex;margin-top:0;border:1px solid #426178;border-radius:8px;background:rgba(29,69,98,.3);padding:7px 11px;color:#d6edfd;font-size:12px;font-weight:750;text-decoration:none}
 .project .published-links a:hover{background:rgba(29,96,139,.45);color:#fff}
 .edu{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.edu .card h3{color:#fff;font:800 17px Inter,system-ui;margin:8px 0;text-transform:none;letter-spacing:normal}.small{font:11px Consolas,monospace;color:#727b89;text-transform:uppercase;letter-spacing:.08em}
-.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.contact .card h3{color:#fff;font:800 22px Inter,system-ui;text-transform:none;letter-spacing:normal}.contact .card p{color:var(--muted)}.contactList{display:grid;gap:10px}.contactLink{display:flex;justify-content:space-between;padding:13px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;background:#0d1016}.contactLink:hover{border-color:rgba(255,52,52,.55)}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.contact .card h3{color:#fff;font:800 22px Inter,system-ui;text-transform:none;letter-spacing:normal}.contact .card p{color:var(--muted)}.contactList{display:grid;gap:10px}.contactLink{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;background:#0d1016;font-weight:650;letter-spacing:-.015em}.contactLink:hover{border-color:rgba(255,52,52,.55);background:#171b24}
+.contactLink span:last-child{font-size:18px;color:#f1a1a1;flex-shrink:0}
+.contact .actions{margin-top:24px}
+.mobileNav{display:none;position:relative}
+.mobileNav summary{list-style:none;cursor:pointer;border:1px solid #343b49;border-radius:10px;padding:7px 12px;font-size:13px;font-weight:700}
+.mobileNavLinks{position:absolute;right:0;top:calc(100% + 12px);min-width:210px;border:1px solid #343b49;border-radius:12px;padding:8px;background:#10141b;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.mobileNavLinks a{display:block;padding:10px 12px;text-decoration:none;font-size:14px;border-radius:8px}
+.mobileNavLinks a:hover{background:#222936}
 footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#727b89;font:12px Consolas,monospace}
 @media(max-width:960px){.heroGrid,.edu,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}.portraitBox{width:250px}}
-@media(max-width:720px){.wrap{width:min(calc(100% - 24px),var(--max))}.links{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.head{grid-template-columns:1fr;gap:4px}.grid4{grid-template-columns:1fr}.hero{padding-top:58px}.heroGrid{gap:36px}.meta{flex-direction:column}}
+@media(max-width:720px){.wrap{width:min(calc(100% - 24px),var(--max))}.links{display:none}.mobileNav{display:block}.metrics{grid-template-columns:repeat(2,1fr)}.head{grid-template-columns:1fr;gap:4px}.grid4{grid-template-columns:1fr}.hero{padding-top:58px}.heroGrid{gap:36px}.meta{flex-direction:column}.contactLink{min-height:52px}}
 </style>
 </head>
 <body>
@@ -57,8 +67,13 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
   <div class="wrap"><nav>
     <a class="brand" href="#top"><span class="mark"></span><span>SHV / DATA + AI</span></a>
     <div class="links">
-      <a href="#career">Career</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="cta" href="#contact">Get in touch</a>
+      <a href="#career">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="cta" href="#contact">Get in Touch</a>
     </div>
+    <details class="mobileNav"><summary aria-label="Toggle navigation">Menu ☰</summary>
+      <div class="mobileNavLinks">
+        <a href="#career">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Get in Touch</a>
+      </div>
+    </details>
   </nav></div>
 </header>
 <main id="top">
@@ -72,13 +87,13 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
       <div class="meta">
         <span>Glendale, AZ, USA</span>
         <a href="mailto:swapnilherwadkar98@gmail.com">swapnilherwadkar98@gmail.com</a>
-        <a href="https://www.linkedin.com/in/shv98" target="_blank" rel="noreferrer">linkedin.com/in/shv98</a>
+        <a href="https://www.linkedin.com/in/shv98" target="_blank" rel="noopener noreferrer">linkedin.com/in/shv98</a>
       </div>
       <div class="actions">
-        <a class="btn primary" href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noreferrer">Read SwapOpt Case Study ↗</a>
+        <a class="btn primary" href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read SwapOpt Case Study ↗</a>
         <a class="btn" href="#projects">View Featured Work ↓</a>
-        <a class="btn" href="https://github.com/SHV-19" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a class="btn" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noreferrer">Tableau ↗</a>
+        <a class="btn" href="https://github.com/SHV-19" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noopener noreferrer">Tableau ↗</a>
       </div>
     </div>
     <div><div class="portraitBox"><img class="portrait" src="https://github.com/SHV-19.png" alt="Swapnil Herwadkar"></div></div>
@@ -94,7 +109,7 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
 </div></section>
 
 <section id="career"><div class="wrap">
-  <div class="head"><div class="no">01 / CAREER</div><div><h2>Career Circuit</h2><p>Operational analytics, enterprise reporting, business intelligence, and AI-assisted decision systems.</p></div></div>
+  <div class="head"><div class="no">01 / CAREER</div><div><h2>Professional Experience</h2><p>Operational analytics, enterprise reporting, business intelligence, and AI-assisted decision systems.</p></div></div>
   <div class="timeline"><div class="rail"></div><div class="stack">
     <details open><summary><div class="date">Nov 2025 — Present · Independent Analytics & AI Projects</div><div class="role">Decision Systems, Product Analytics & Sports Analytics</div><div class="org">Independent</div></summary><div class="detailBody"><ul><li>Built <strong>SwapOpt</strong>, a local-first career decision system that compares job opportunities against verified candidate evidence and preserves hard rules such as missing evidence = UNKNOWN, scheduled interview ≠ occurred interview, accepted offer ≠ placement, and no autonomous application submission.</li><li>Built the <strong>FPL Decision Engine</strong> as a local-first football decision-support system: Official FPL data and squad rules, LiveFPL rank/effective-ownership context, AI-assisted proposals and deterministic validation of transfer, budget, lineup and captaincy constraints. The public portfolio contains curated historical source and documentation, not the full later private runtime.</li><li>Designed a human–AI research workflow around initial beliefs, model suggestions, manager choices and eventual outcomes to investigate decision quality, confidence and bias. Causal findings and improvements in FPL rank have <strong>not</strong> been established.</li><li>Built the <strong>FIFA World Cup 2026 Sponsorship Analytics Platform</strong> with Python ETL, Snowflake, SQL, Power BI, Streamlit and OpenAI for sponsorship-market analysis and conversational analytics.</li></ul></div></details>
     <details><summary><div class="date">Oct 2024 — Oct 2025 · Data Analyst · Contract</div><div class="role">Operational Analytics, KPI Design & Reporting Automation</div><div class="org">Community Dreams Foundation</div></summary><div class="detailBody"><ul><li>Translated homeowner intake, contractor matching, incentives, and project workflows into KPI definitions and dashboard requirements.</li><li>Automated SQL-driven reporting and sustainability KPI workflows, reducing manual processing effort by 25%.</li><li>Optimized MySQL reporting datasets and reusable BI logic for self-service analytics.</li></ul></div></details>
@@ -114,9 +129,9 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
 </div></section>
 
 <section id="projects"><div class="wrap">
-  <div class="head"><div class="no">03 / PROJECTS</div><div><h2>Featured Builds</h2><p>Selected work across decision intelligence, business intelligence, operations analytics, supply chain, and predictive modeling. SwapOpt is the flagship. FPL Decision Engine extends the evidence-to-decision approach into sports analytics; FIFA 2026 and the remaining projects demonstrate commercial BI and predictive-analytics breadth.</p></div></div>
+  <div class="head"><div class="no">03 / PROJECTS</div><div><h2>Selected Projects</h2><p>From business intelligence and automation to AI-assisted decision systems and sports analytics. These projects show how I frame problems, work with evidence and turn ideas into practical tools.</p></div></div>
   <div class="projects">
-    <article class="card project featured"><div class="kicker">Flagship · Evidence-Grounded AI Decision System</div><h3>SwapOpt — AI Career Operating System</h3><p>Local-first career decision system built around a different question: not “how fast can I apply?” but “does this opportunity deserve my effort?” It connects opportunity discovery, verified Candidate Identity, structured Role Identity, truthful application workflows, explicit interview/offer lifecycle, Network DNA, market intelligence, and outcome learning.</p><div class="tech">JavaScript · Node.js · Express · OpenAI · Chrome MV3 · GitHub Actions</div><p><strong>Final private-runtime release:</strong> 3,244 / 3,244 automated tests · 24 modules · 257 validated paths · manual browser/runtime acceptance.</p><p><strong>Build model:</strong> AI-assisted development with primary ownership of product requirements, workflow design, system logic, validation, debugging, and release execution.</p><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine" target="_blank" rel="noreferrer">View public showcase ↗</a><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noreferrer">Read product case study ↗</a><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/TECHNICAL_BLUEPRINT.md" target="_blank" rel="noreferrer">Explore technical blueprint ↗</a></article>
+    <article class="card project featured"><div class="kicker">Flagship · Evidence-Grounded AI Decision System</div><h3>SwapOpt — AI Career Operating System</h3><p>Local-first career decision system built around a different question: not “how fast can I apply?” but “does this opportunity deserve my effort?” It connects opportunity discovery, verified Candidate Identity, structured Role Identity, truthful application workflows, explicit interview/offer lifecycle, Network DNA, market intelligence, and outcome learning.</p><div class="tech">JavaScript · Node.js · Express · OpenAI · Chrome MV3 · GitHub Actions</div><p><strong>Final private-runtime release:</strong> 3,244 / 3,244 automated tests · 24 modules · 257 validated paths · manual browser/runtime acceptance.</p><p><strong>Build model:</strong> AI-assisted development with primary ownership of product requirements, workflow design, system logic, validation, debugging, and release execution.</p><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine" target="_blank" rel="noopener noreferrer">View Public Showcase ↗</a><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noopener noreferrer">Read Product Case Study ↗</a><a href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/TECHNICAL_BLUEPRINT.md" target="_blank" rel="noopener noreferrer">Explore Technical Blueprint ↗</a></article>
 
     <article class="card project fpl-feature">
       <div class="kicker">Sports Analytics · Explainable Decisions · Human–AI Research</div>
@@ -128,28 +143,28 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
       <div class="tech">PowerShell · HTML / JavaScript · Official FPL API · LiveFPL · AI-assisted reasoning · Constraint checks</div>
       <p class="scope-note">Public release: curated historical V4.1.2 source, architecture and a synthetic decision walkthrough. The newer private Windows runtime and personal FPL data are not published.</p>
       <div class="published-work" aria-label="Published project writing">
-        <div class="published-title">Published writing</div>
+        <div class="published-title">Published Writing</div>
         <div class="published-headline">A Good Prediction Doesn't Always Make a Good Decision</div>
         <div class="published-links">
           <a href="https://medium.com/@swapnilherwadkar/a-good-prediction-doesnt-always-make-a-good-decision-22f2a0539690" target="_blank" rel="noopener noreferrer">Read on Medium ↗</a>
           <a href="https://dev.to/shv19/a-good-prediction-doesnt-always-make-a-good-decision-600" target="_blank" rel="noopener noreferrer">Read on DEV Community ↗</a>
         </div>
       </div>
-      <a href="https://github.com/SHV-19/FPL-Decision-Engine" target="_blank" rel="noopener noreferrer">Project overview + curated source ↗</a>
-      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/SYNTHETIC_DECISION_EXAMPLE.md" target="_blank" rel="noopener noreferrer">See a two-minute decision example ↗</a>
-      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/ARCHITECTURE_MAP.md" target="_blank" rel="noopener noreferrer">Explore the architecture ↗</a>
-      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md" target="_blank" rel="noopener noreferrer">Research questions + collaboration ↗</a>
+      <a href="https://github.com/SHV-19/FPL-Decision-Engine" target="_blank" rel="noopener noreferrer">Project Overview &amp; Curated Source ↗</a>
+      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/SYNTHETIC_DECISION_EXAMPLE.md" target="_blank" rel="noopener noreferrer">View a Two-Minute Decision Example ↗</a>
+      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/ARCHITECTURE_MAP.md" target="_blank" rel="noopener noreferrer">Explore the Architecture ↗</a>
+      <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md" target="_blank" rel="noopener noreferrer">Research Questions &amp; Collaboration ↗</a>
     </article>
 
-    <article class="card project"><div class="kicker">AI + BI Platform</div><h3>FIFA World Cup 2026 Sponsorship Analytics</h3><p>End-to-end sponsorship analytics platform combining Python ETL, Snowflake, SQL, Power BI, Streamlit, and conversational AI for governed KPI reporting and decision support.</p><div class="tech">Python · Snowflake · SQL · Power BI · Streamlit · OpenAI</div><a href="https://github.com/SHV-19/FIFA-2026-AI-Sponsorship-Analytics-Platform" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">AI + BI Platform</div><h3>FIFA World Cup 2026 Sponsorship Analytics</h3><p>End-to-end sponsorship analytics platform combining Python ETL, Snowflake, SQL, Power BI, Streamlit, and conversational AI for governed KPI reporting and decision support.</p><div class="tech">Python · Snowflake · SQL · Power BI · Streamlit · OpenAI</div><a href="https://github.com/SHV-19/FIFA-2026-AI-Sponsorship-Analytics-Platform" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article>
 
-    <article class="card project"><div class="kicker">Operations Analytics</div><h3>ABS Inventory Forecasting & Optimization</h3><p>Time-series inventory analysis using historical sales, replenishment, and lead-time data to forecast demand and support reorder-point, safety-stock, and SKU-allocation decisions.</p><div class="tech">Python · Pandas · Statsmodels · ARIMA · SARIMA</div><a href="https://github.com/SHV-19/ABS-Inventory-Analysis" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">Operations Analytics</div><h3>ABS Inventory Forecasting &amp; Optimization</h3><p>Time-series inventory analysis using historical sales, replenishment, and lead-time data to forecast demand and support reorder-point, safety-stock, and SKU-allocation decisions.</p><div class="tech">Python · Pandas · Statsmodels · ARIMA · SARIMA</div><a href="https://github.com/SHV-19/ABS-Inventory-Analysis" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article>
 
-    <article class="card project"><div class="kicker">Healthcare Supply Chain</div><h3>ARV / HIV Treatment Distribution Analysis</h3><p>Tableau-led analysis of treatment and test-kit shipments across Africa, examining delivery delays, vendor performance, shipment modes, pricing, and geographic distribution.</p><div class="tech">Tableau · Excel · XLMiner · Supply Chain Analytics</div><a href="https://github.com/SHV-19/ARV-HIV-HRDT-Treatment-Distribution-Analysis" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">Healthcare Supply Chain</div><h3>ARV / HIV Treatment Distribution Analysis</h3><p>Tableau-led analysis of treatment and test-kit shipments across Africa, examining delivery delays, vendor performance, shipment modes, pricing, and geographic distribution.</p><div class="tech">Tableau · Excel · XLMiner · Supply Chain Analytics</div><a href="https://github.com/SHV-19/ARV-HIV-HRDT-Treatment-Distribution-Analysis" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article>
 
-    <article class="card project"><div class="kicker">Predictive Analytics</div><h3>Ad Click Prediction</h3><p>Predictive targeting pipeline for high-probability ad-click users using feature engineering, class balancing, and gradient-boosted modeling.</p><div class="tech">Python · Scikit-learn · XGBoost · SMOTE · Pandas</div><a href="https://github.com/SHV-19/AD_Click_Churn" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">Predictive Analytics</div><h3>Ad Click Prediction</h3><p>Predictive targeting pipeline for high-probability ad-click users using feature engineering, class balancing, and gradient-boosted modeling.</p><div class="tech">Python · Scikit-learn · XGBoost · SMOTE · Pandas</div><a href="https://github.com/SHV-19/AD_Click_Churn" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article>
 
-    <article class="card project"><div class="kicker">ESG + Predictive Modeling</div><h3>Fashion Sustainability Index</h3><p>Analysis of fashion-industry environmental indicators with Random Forest modeling and Tableau dashboards to identify sustainability drivers and predict rating patterns.</p><div class="tech">Python · Scikit-learn · Random Forest · Tableau</div><a href="https://github.com/SHV-19/Sustainability-Index-Fashion-Industry" target="_blank" rel="noreferrer">View repository ↗</a></article>
+    <article class="card project"><div class="kicker">ESG + Predictive Modeling</div><h3>Fashion Sustainability Index</h3><p>Analysis of fashion-industry environmental indicators with Random Forest modeling and Tableau dashboards to identify sustainability drivers and predict rating patterns.</p><div class="tech">Python · Scikit-learn · Random Forest · Tableau</div><a href="https://github.com/SHV-19/Sustainability-Index-Fashion-Industry" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article>
   </div>
 </div></section>
 
@@ -164,20 +179,20 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
 <section id="contact"><div class="wrap">
   <div class="head"><div class="no">05 / CONTACT</div><div><h2>Let’s Build Something Useful</h2><p>Open to conversations around analytics, business intelligence, data products, sports analytics research, and AI-assisted decision systems.</p></div></div>
   <div class="contact">
-    <article class="card"><h3>Business problems → measurable analytics → better decisions.</h3><p>My strongest work sits where business context, reporting, data quality, automation, and decision support intersect. SwapOpt is the clearest example of how I structure an ambiguous problem into an evidence-backed system.</p><div class="actions"><a class="btn primary" href="mailto:swapnilherwadkar98@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/shv98" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noreferrer">SwapOpt case study ↗</a></div></article>
+    <article class="card"><h3>Business Problems → Measurable Analytics → Better Decisions</h3><p>My strongest work sits where business context, reporting, data quality, automation, and decision support intersect. SwapOpt is the clearest example of how I structure an ambiguous problem into an evidence-backed system.</p><div class="actions"><a class="btn primary" href="mailto:swapnilherwadkar98@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/shv98" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/SHV-19/SwapOpt-AI-Job-Decision-Engine/blob/main/docs/PRODUCT_CASE_STUDY.md" target="_blank" rel="noopener noreferrer">SwapOpt Case Study ↗</a></div></article>
     <article class="card"><div class="contactList">
-      <a class="contactLink" href="https://github.com/SHV-19" target="_blank" rel="noreferrer"><span>GitHub</span><span>↗</span></a>
-      <a class="contactLink" href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md" target="_blank" rel="noopener noreferrer"><span>Football analytics research</span><span>↗</span></a>
-      <a class="contactLink" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noreferrer"><span>Tableau Public</span><span>↗</span></a>
+      <a class="contactLink" href="https://github.com/SHV-19" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>↗</span></a>
+      <a class="contactLink" href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md" target="_blank" rel="noopener noreferrer"><span>Football Analytics Research</span><span>↗</span></a>
+      <a class="contactLink" href="https://public.tableau.com/app/profile/swapnil.herwadkar/vizzes" target="_blank" rel="noopener noreferrer"><span>Tableau Public</span><span>↗</span></a>
       <a class="contactLink" href="mailto:swapnilherwadkar98@gmail.com"><span>Email</span><span>→</span></a>
     </div></article>
   </div>
-  <footer><span>© <span id="y"></span> Swapnil Herwadkar</span><span>Built for fast scanning · Data / BI / AI</span></footer>
+  <footer><span>© <span id="y"></span> Swapnil Herwadkar</span><span>Business Intelligence · Analytics · Decision Systems</span></footer>
 </div></section>
 </main>
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
-document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(o=>{if(o!==d)o.open=false})}));
+document.querySelectorAll('.timeline details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.timeline details').forEach(o=>{if(o!==d)o.open=false})}));
 </script>
 </body>
 </html>
