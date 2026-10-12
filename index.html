@@ -38,6 +38,12 @@ details{border:1px solid var(--line);border-radius:14px;background:var(--panel);
 .decision-flow span{border:1px solid rgba(83,185,228,.3);background:rgba(38,111,149,.13);padding:5px 9px;border-radius:8px;font:11px/1.5 Consolas,monospace;color:#c1eaff}
 .decision-flow b{font:700 12px Consolas,monospace;color:#78bbd9}
 .project .scope-note{font-size:12px;color:#a5b3c6;border-top:1px solid #273340;padding-top:14px;margin-top:16px}
+.published-work{margin-top:17px;padding:15px;border-radius:12px;border:1px solid rgba(83,185,228,.28);background:rgba(38,111,149,.075)}
+.published-work .published-title{font:700 12px Consolas,monospace;color:#c1eaff;text-transform:uppercase;letter-spacing:.07em}
+.published-work .published-headline{margin:7px 0 10px;font-size:14px;line-height:1.45;color:#f1f6fb;font-weight:700}
+.published-work .published-links{display:flex;flex-wrap:wrap;gap:8px}
+.project .published-links a{display:inline-flex;margin-top:0;border:1px solid #426178;border-radius:8px;background:rgba(29,69,98,.3);padding:7px 11px;color:#d6edfd;font-size:12px;font-weight:750;text-decoration:none}
+.project .published-links a:hover{background:rgba(29,96,139,.45);color:#fff}
 .edu{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.edu .card h3{color:#fff;font:800 17px Inter,system-ui;margin:8px 0;text-transform:none;letter-spacing:normal}.small{font:11px Consolas,monospace;color:#727b89;text-transform:uppercase;letter-spacing:.08em}
 .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.contact .card h3{color:#fff;font:800 22px Inter,system-ui;text-transform:none;letter-spacing:normal}.contact .card p{color:var(--muted)}.contactList{display:grid;gap:10px}.contactLink{display:flex;justify-content:space-between;padding:13px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;background:#0d1016}.contactLink:hover{border-color:rgba(255,52,52,.55)}
 footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#727b89;font:12px Consolas,monospace}
@@ -121,6 +127,14 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 46px;disp
       <p><strong>Research direction:</strong> How do AI suggestions affect a manager's initial judgment, confidence and choices? The evaluation design is public; improved FPL rank or causal effects are <strong>not yet demonstrated</strong>.</p>
       <div class="tech">PowerShell · HTML / JavaScript · Official FPL API · LiveFPL · AI-assisted reasoning · Constraint checks</div>
       <p class="scope-note">Public release: curated historical V4.1.2 source, architecture and a synthetic decision walkthrough. The newer private Windows runtime and personal FPL data are not published.</p>
+      <div class="published-work" aria-label="Published project writing">
+        <div class="published-title">Published writing</div>
+        <div class="published-headline">A Good Prediction Doesn't Always Make a Good Decision</div>
+        <div class="published-links">
+          <a href="https://medium.com/@swapnilherwadkar/a-good-prediction-doesnt-always-make-a-good-decision-22f2a0539690" target="_blank" rel="noopener noreferrer">Read on Medium ↗</a>
+          <a href="https://dev.to/shv19/a-good-prediction-doesnt-always-make-a-good-decision-600" target="_blank" rel="noopener noreferrer">Read on DEV Community ↗</a>
+        </div>
+      </div>
       <a href="https://github.com/SHV-19/FPL-Decision-Engine" target="_blank" rel="noopener noreferrer">Project overview + curated source ↗</a>
       <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/SYNTHETIC_DECISION_EXAMPLE.md" target="_blank" rel="noopener noreferrer">See a two-minute decision example ↗</a>
       <a href="https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/ARCHITECTURE_MAP.md" target="_blank" rel="noopener noreferrer">Explore the architecture ↗</a>
