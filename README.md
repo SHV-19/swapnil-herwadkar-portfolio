@@ -17,6 +17,7 @@ Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on bus
   - [Two-minute synthetic decision walkthrough](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/SYNTHETIC_DECISION_EXAMPLE.md)
   - [Architecture and trust boundaries](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/ARCHITECTURE_MAP.md)
   - [Research questions and collaboration](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md)
+  - Published article, *A Good Prediction Doesn't Always Make a Good Decision*: [Medium](https://medium.com/@swapnilherwadkar/a-good-prediction-doesnt-always-make-a-good-decision-22f2a0539690) · [DEV Community](https://dev.to/shv19/a-good-prediction-doesnt-always-make-a-good-decision-600)
 - FIFA World Cup 2026 Sponsorship Analytics
 - ABS Inventory Forecasting & Optimization
 - ARV / HIV Treatment Distribution Analysis
