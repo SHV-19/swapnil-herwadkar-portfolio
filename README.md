@@ -13,7 +13,10 @@ Personal portfolio for **Swapnil Herwadkar**, a Data & BI Analyst focused on bus
 
 ## Additional featured work
 
-- **[FPL Decision Engine](https://github.com/SHV-19/FPL-Decision-Engine)** — an explainable sports-decision system combining Official FPL player evidence, real squad economics, LiveFPL rank/EO context, deterministic legality checks, manager evidence, and a pre-model → AI → action → outcome research trail for studying decision quality and bias.
+- **[FPL Decision Engine](https://github.com/SHV-19/FPL-Decision-Engine)** — a local-first football decision-support showcase using Official FPL authority, LiveFPL rank/EO context, AI-assisted proposals and deterministic squad-rule validation. The public repository contains a curated historical V4.1.2 implementation, architecture, and synthetic walkthrough; the newer private runtime and manager data are excluded. Rank improvement and causal human–AI research outcomes are not yet established.
+  - [Two-minute synthetic decision walkthrough](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/SYNTHETIC_DECISION_EXAMPLE.md)
+  - [Architecture and trust boundaries](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/ARCHITECTURE_MAP.md)
+  - [Research questions and collaboration](https://github.com/SHV-19/FPL-Decision-Engine/blob/main/docs/portfolio/COLLABORATE.md)
 - FIFA World Cup 2026 Sponsorship Analytics
 - ABS Inventory Forecasting & Optimization
 - ARV / HIV Treatment Distribution Analysis
